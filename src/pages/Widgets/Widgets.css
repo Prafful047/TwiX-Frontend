@@ -1,0 +1,89 @@
+.widgets {
+    flex : 0.3;
+    min-width: fit-content;
+    overflow-y: scroll;
+    /* padding: 10px 20px; */
+}
+
+.widgets::-webkit-scrollbar {
+    display: none;
+}
+
+.widgets_input {
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding : 10px 20px;
+    border-radius : 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.widgets_input>input {
+    border : none;
+    margin-top : 0px;
+    background-color: var(--twitter-background);
+}
+
+.widgets_searchIcon {
+    color: gray;
+}
+
+.widgets_languageSelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  
+  .widgets_languageSelector > input,
+  .widgets_languageSelector > select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .widgets_otpVerification {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .widgets_otpVerification > input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .widgets_otpVerification > button {
+    padding: 10px 20px;
+    background-color: var(--twitter-background);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+
+.widgets_widgetContainer{
+    margin-top : 15px;
+    margin-left : 20px;
+    padding : 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+
+.widgets_widgetContainer>h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+@media screen and (max-width:688px) {
+    .widgets{
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+/* LoginHistory.css */
+
+.login-history-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-history-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .login-history-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .login-history-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-history-item p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .login-history-item p span {
+    font-weight: bold;
+    color: #333;
+  }
+  
