@@ -6,7 +6,7 @@ import './Sidebar.css';
 import { useTranslation } from 'react-i18next';
 
 const PremiumButton = ({onClick}) => {
-  const {t, i18n} = useTranslation();
+  const {t} = useTranslation();
   return (
     <Button
       variant="contained"
