@@ -1,4 +1,4 @@
-// src/ThemeContext.js
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { themes } from './themes';
 import { useTranslation } from 'react-i18next';

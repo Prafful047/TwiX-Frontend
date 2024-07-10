@@ -1,9 +1,9 @@
 import React from 'react'
 import './SidebarOptions.css'
-import { useTranslation } from 'react-i18next';
+// i
 
 const SidebarOptions = ({ active , text , Icon}) => {
-  const { t, i18n } = useTranslation();
+  
   return (
     <div className= { `sidebarOptions ${active && 'sidebarOptions_active'}`} >
       <Icon />

@@ -34,13 +34,13 @@ const Sidebar = ({ handleLogout, user }) => {
   const [isPremiumModalOpen, setPremiumModalOpen] = useState(false);
   const openMenu = Boolean(anchorEl);
   const loggedInUser = useLoggedInUser();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   // console.log(loggedInUser)
 
-  const userProfilePic = loggedInUser[0]?.profileImage
-    ? loggedInUser[0]?.profileImage
-    : "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png";
+  // const userProfilePic = loggedInUser[0]?.profileImage
+  //   ? loggedInUser[0]?.profileImage
+  //   : "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_960_720.png";
 
   const handleClick = (e) => {
     setAnchorEl(e.currentTarget);

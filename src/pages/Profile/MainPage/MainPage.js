@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 const MainPage = ({ user }) => {
   const navigate = useNavigate();
   const [loggedInUser] = useLoggedInUser();
-  const [imageURL, setImageURL] = useState("");
+  // const [imageURL, setImageURL] = useState("");
   const [isLoading, setIsLoading] = useState("");
   const username = user?.email?.split("@")[0];
   const [posts, setPosts] = useState([]);
@@ -27,7 +27,7 @@ const MainPage = ({ user }) => {
       .then((data) => {
         setPosts(data);
       });
-  }, [posts]);
+  }, [posts , user?.email]);
 
   const handleUploadCoverImage = (e) => {
     setIsLoading(true);

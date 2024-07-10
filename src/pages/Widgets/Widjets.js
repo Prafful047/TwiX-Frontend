@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Widgets.css";
 import { TwitterTimelineEmbed, TwitterTweetEmbed } from "react-twitter-embed";
 import SearchIcon from "@mui/icons-material/Search";
@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
-import { useTheme } from "../../ThemeContext";
+
 
 const Widjets = ({ userEmail }) => {
   const { t, i18n } = useTranslation();
@@ -15,7 +15,7 @@ const Widjets = ({ userEmail }) => {
   const [otpSent, setOtpSent] = useState(false);
   const [otpVerified, setOtpVerified] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const theme = useTheme();
+  
 
   const handleLanguageChange = async (e) => {
     const selectedLanguage = e.target.value;
@@ -27,6 +27,7 @@ const Widjets = ({ userEmail }) => {
       try {
         console.log(`Sending OTP to ${userEmail}`);
         await axios.post('https://twix-backend.onrender.com/send-otp', { email: userEmail });
+        console.log(otpSent)
         setOtpSent(true);
         setModalOpen(true);
         console.log('OTP sent, modal open state:', modalOpen);

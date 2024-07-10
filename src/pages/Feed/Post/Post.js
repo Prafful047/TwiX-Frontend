@@ -6,12 +6,12 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import PublishIcon from '@mui/icons-material/Publish'
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline'
 import './Post.css'
-import { useTheme } from '../../../ThemeContext';
+
 
 const Post = ({ p }) => {
 
     const { name , username , photo , post , profilePhoto } = p ;
-    const theme = useTheme();
+    
 
   return (
     <div className='post'>
